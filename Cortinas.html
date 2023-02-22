@@ -1,0 +1,103 @@
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Adenir</title>
+        <link rel="stylesheet" href="/assets/css/style.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            />
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+            />
+    </head>
+    <body>
+        <header class="max-width bg" id="Home">
+            <nav class="menu">
+                <div class="logo"></div>
+                <div class="desktop-menu">
+                    <ul>
+                        <li><a href="#Home">Home</a></li>
+                        <li><a href="#About">Novidades</a></li>
+                        <li><a href="#Service">Destaque</a></li>
+                        <li><a href="#Contact">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="mobile-menu" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                    <ul id="myLinks">
+                        <li><a href="#Home">Home</a></li>
+                        <li><a href="#About">Novidades</a></li>
+                        <li><a href="#Service">Destaque</a></li>
+                        <li><a href="#Contact">Contato</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <button id="back-to-top">^</button>
+        </header>
+        <section class="max-width bg2" id="About">
+            <div class="container">
+                <div class="titulo">
+                    <h2 class="text-md color-cinza-1">Cortinas</h2>
+                    <div class="line">
+                    </div>
+                    <a class="inicio" href="/">Voltar</a>
+                </div>
+                <div class="down">
+                    <div class="box">
+                        <img src="/assets/image/Cortina.jpeg" alt="">
+                        <div class="text">
+                            <h2 class="color-branco">Cortina</h2>   
+                            <a href="https://web.whatsapp.com/send?phone=559911112222">Compre agora</a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="/assets/image/Cortina1.jpeg" alt="">
+                        <div class="text">
+                            <h2 class="color-branco">Cortina</h2>
+                            <a href="https://web.whatsapp.com/send?phone=559911112222">Compre agora</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <footer>
+            <div class="container">
+                <p class="text-pq">Copyright © 2023 <span class="color-laranja">FRONT
+                    </span>ZpTechSolutions</p>
+                <p class="text-pq">Tel: (61) 98440-8862</p>
+            </div>
+        </footer>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <script>
+
+        // Menu-Mobile
+
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+        // Scrollbar Personalizado
+
+        var btn = document.querySelector("#back-to-top");
+        btn.addEventListener("click", function () {
+            window.scrollTo(0, 0);
+        });
+    </script>
+    </body>
+
+</html>
