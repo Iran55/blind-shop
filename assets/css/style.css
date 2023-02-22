@@ -46,6 +46,18 @@ body {
 .text-gd {
     font-size: 72px;
 }
+.titulo a{
+    padding: 5px 10px;
+    background-color:#8b634a;
+    color: #fff;
+    text-decoration:none;
+    border-radius: 10px;
+
+}
+
+.inicio:hover{
+    background-color: #8B634A;
+}
 
 .text-md {
     font-size: 42px;
@@ -119,6 +131,9 @@ button {
     font-size: 14px;
     border: none;
     cursor: pointer;
+    border: rgb(255, 255, 255);
+    border-style: solid;
+    border-radius: 40px;
     transition: 0.8s ease;
     margin-bottom: 20px;
     margin-right: 20px;
@@ -140,7 +155,6 @@ button:hover {
     cursor: pointer;
     transition: 0.8s ease;
     margin-bottom: 20px;
-    margin-right: 20px;
 }
 
 .box a:hover {
@@ -162,7 +176,7 @@ button:hover {
 
 .titulo {
     width: 100%;
-    min-height: 250px;
+    min-height: 200px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -175,7 +189,7 @@ button:hover {
 .line {
     width: 80%;
     height: 2px;
-    background: #17203F;
+    background: #8b634a;
     position: relative;
     top: 40px;
 }
@@ -199,6 +213,14 @@ button:hover {
     width: 100%;
     min-height: 300px;
 }
+.down2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    min-height: 300px;
+}
+
 
 .box {
     width: 24%;
@@ -208,7 +230,7 @@ button:hover {
     justify-content: center;
     flex-direction: column;
     transition: 0.5s ease;
-    border-radius: px;
+    border-radius: 1px;
 }
 
 
@@ -227,9 +249,9 @@ button:hover {
 }
 
 .logo {
-    background: url('image/logo.png') no-repeat;
+    background: url('/assets/image/Logo.png') no-repeat;
     background-size: contain;
-    width: 130px;
+    width: 150px;
     height: 80px;
     position: relative;
     top: 20px;
@@ -429,8 +451,8 @@ header .right .imagem img {
 
 #About .box h2 {
     margin-top: 70px;
-    text-align: start;
     font-weight: 300;
+    text-align: center;
 }
 
 #About .box p,
@@ -465,7 +487,7 @@ span {
 
 #Service .box h2 {
     margin-top: 20px;
-    text-align: center;
+    text-align:center;
 }
 
 #Service .box p {
@@ -481,14 +503,13 @@ span {
     position: absolute;
     width: 40%;
     height: 80%;
-    top: -120px;
+    top: -60px;
     left: 0;
     right: 0;
     margin: 0 auto;
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    box-shadow: 0 0 10px 0 #848790;
     transition: 0.4s ease;
     cursor: pointer;
 }
@@ -501,7 +522,7 @@ span {
 
 #Service .container .card button {
     position: absolute;
-    bottom: 10px;
+    bottom: -10px;
     z-index: 9;
     text-transform: uppercase;
     cursor: pointer;
@@ -510,8 +531,8 @@ span {
 
 #Service .container .cards {
     position: relative;
-    width: 100%;
-    height: 100vh;
+    width: 90%;
+    height: 50vh;
 }
 
 #item-1:checked~.cards #song-3,
@@ -738,10 +759,16 @@ footer .container p {
     }
 
     .titulo {
-        min-height: 150px;
+        min-height: 0px;
     }
 
     .down {
+        justify-content: space-between;
+        flex-direction: column;
+        min-height: 600px;
+        padding-top: 40px;
+    }
+    .down2 {
         justify-content: space-between;
         flex-direction: column;
         min-height: 600px;
@@ -784,6 +811,8 @@ footer .container p {
     footer .container p {
         margin-top: 20px;
     }
+  
+
 
 }
 
@@ -808,11 +837,11 @@ footer .container p {
         left: 5px;
     }
 
-    img {
-        margin-top: 15%;
+   
 
+    .left button{
+       visibility: hidden;
     }
-
     .call {
         flex-direction: column;
         justify-content: flex-start;
@@ -932,8 +961,12 @@ footer .container p {
    
     #Service .container .cards{
   
-        height: 45vh;
+        width: 100%;
+        margin-top: 80px    
     }
+    .titulo a{
+        padding-top: 40px;
+}   
 }
 
 
@@ -945,4 +978,7 @@ footer .container p {
     .cards{
         width: 80%;
     }
+    .titulo a{
+        padding-top: 40px;
+}   
 }
