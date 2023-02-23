@@ -223,14 +223,14 @@ button:hover {
 
 
 .box {
-    width: 24%;
-    min-height: 125px;
+    width: 20%;
+    min-height: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     transition: 0.5s ease;
-    border-radius: 1px;
+    border-radius: 20px;
 }
 
 
@@ -433,7 +433,7 @@ header .right .imagem img {
 
 #About .box {
     box-shadow: 0 5px 20px #686868;
-    background: transparent;
+    background: aliceblue;
     margin-bottom: 120px;
 }
 
@@ -447,6 +447,8 @@ header .right .imagem img {
 
 #About .box img {
     width: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
 }
 
 #About .box h2 {
